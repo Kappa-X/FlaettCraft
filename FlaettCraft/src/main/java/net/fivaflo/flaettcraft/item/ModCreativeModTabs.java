@@ -21,7 +21,13 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.Vibranium.get());
                         pOutput.accept(ModItems.Raw_Vibranium.get());
-                        pOutput.accept(ModBlocks.Vibranium_Block.get());
+                        pOutput.accept(ModBlocks.Vibranium_Ore.get());
+                        pOutput.accept(ModItems.Vibranium_Sword.get());
+                        pOutput.accept(ModItems.Vibranium_Pickaxe.get());
+                        pOutput.accept(ModItems.Vibranium_Axe.get());
+                        pOutput.accept(ModItems.Vibranium_Shovel.get());
+                        pOutput.accept(ModItems.Vibranium_Hoe.get());
+                        pOutput.accept(ModBlocks.FlaettBlock.get());
                     })
                     .build());
 

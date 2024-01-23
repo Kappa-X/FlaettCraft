@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "V": {
+      "item": "flaettcraft:vibranium"
+    }
+  },
+  "pattern": [
+    " V ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "flaettcraft:vibranium_shovel"
+  },
+  "show_notification": true
+}
