@@ -1,6 +1,12 @@
 {
   "item.flaettcraft.vibranium": "Vibranium",
   "item.flaettcraft.raw_vibranium": "Raw Vibranium",
-  "block.flaettcraft.vibranium_block": "Vibranium Ore",
+  "item.flaettcraft.vibranium_sword": "Vibranium Sword",
+  "item.flaettcraft.vibranium_pickaxe": "Vibranium Pickaxe",
+  "item.flaettcraft.vibranium_axe": "Vibranium Axe",
+  "item.flaettcraft.vibranium_shovel": "Vibranium Shovel",
+  "item.flaettcraft.vibranium_hoe": "Vibranium Hoe",
+  "block.flaettcraft.vibranium_ore": "Vibranium Ore",
+  "block.flaettcraft.flaettblock": "Flaett Block",
   "creativetab.flaettcraft_tab": "FlaettCraft Tab"
 }
