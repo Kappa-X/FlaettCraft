@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "V": {
+      "item": "flaettcraft:vibranium"
+    }
+  },
+  "pattern": [
+    "V V",
+    "VVV",
+    "VVV"
+  ],
+  "result": {
+    "item": "flaettcraft:vibranium_chestplate"
+  },
+  "show_notification": true
+}
