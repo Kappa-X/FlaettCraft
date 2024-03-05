@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bone_meal"
+    },
+    "F": {
+      "item": "flaettcraft:flaettblock"
+    },
+    "G": {
+      "item": "minecraft:green_dye"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "pattern": [
+    "GBR",
+    " F ",
+    "GBR"
+  ],
+  "result": {
+    "item": "flaettcraft:valeblock"
+  },
+  "show_notification": true
+}

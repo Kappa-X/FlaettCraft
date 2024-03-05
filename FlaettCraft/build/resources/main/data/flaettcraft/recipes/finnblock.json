@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "flaettcraft:flaettblock"
+    },
+    "L": {
+      "item": "minecraft:lime_dye"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LFL",
+    "LLL"
+  ],
+  "result": {
+    "item": "flaettcraft:finnblock"
+  },
+  "show_notification": true
+}

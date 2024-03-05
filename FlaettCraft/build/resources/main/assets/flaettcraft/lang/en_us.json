@@ -12,5 +12,9 @@
   "item.flaettcraft.vibranium_hoe": "Vibranium Hoe",
   "block.flaettcraft.vibranium_ore": "Vibranium Ore",
   "block.flaettcraft.flaettblock": "Flaett Block",
+  "block.flaettcraft.valeblock": "Vale Block",
+  "block.flaettcraft.finnblock": "Finn Block",
+  "item.flaettcraft.star_wars_drill_music_disc": "Star Wars Drill Music Disc",
+  "item.flaettcraft.star_wars_drill_music_disc.desc": "Flätte (Florain Portmann) - Star Wars Drill",
   "creativetab.flaettcraft_tab": "FlaettCraft Tab"
 }
