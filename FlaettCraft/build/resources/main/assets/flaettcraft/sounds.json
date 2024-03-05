@@ -1,0 +1,52 @@
+{
+  "sound_flaettblock_break": {
+    "subtitle": "sounds.flaettcraft.sound_flaettblock_break",
+    "sounds": [
+      "flaettcraft:sound_flaettblock_break"
+    ]
+  },
+  "sound_valeblock_break": {
+    "subtitle": "sounds.flaettcraft.sound_valeblock_break",
+    "sounds": [
+      "flaettcraft:sound_valeblock_break"
+    ]
+  },
+  "sound_finnblock_break": {
+    "subtitle": "sounds.flaettcraft.sound_finnblock_break",
+    "sounds": [
+      "flaettcraft:sound_finnblock_break"
+    ]
+  },
+  "sound_block_step": {
+    "subtitle": "sounds.flaettcraft.sound_block_step",
+    "sounds": [
+      "flaettcraft:sound_block_step"
+    ]
+  },
+  "sound_block_place": {
+    "subtitle": "sounds.flaettcraft.sound_block_place",
+    "sounds": [
+      "block.stone.place"
+    ]
+  },
+  "sound_block_hit": {
+    "subtitle": "sounds.flaettcraft.sound_block_hit",
+    "sounds": [
+      "flaettcraft:sound_block_hit"
+    ]
+  },
+  "sound_block_fall": {
+    "subtitle": "sounds.flaettcraft.sound_block_fall",
+    "sounds": [
+      "flaettcraft:sound_block_fall"
+    ]
+  },
+  "star_wars_drill":{
+    "sounds": [
+      {
+        "name": "flaettcraft:star_wars_drill",
+        "stream": true
+      }
+    ]
+  }
+}
