@@ -5,8 +5,16 @@
   "item.flaettcraft.vibranium_pickaxe": "Vibranium Pickaxe",
   "item.flaettcraft.vibranium_axe": "Vibranium Axe",
   "item.flaettcraft.vibranium_shovel": "Vibranium Shovel",
+  "item.flaettcraft.vibranium_helmet": "Vibranium Helmet",
+  "item.flaettcraft.vibranium_chestplate": "Vibranium Chestplate",
+  "item.flaettcraft.vibranium_leggings": "Vibranium Leggings",
+  "item.flaettcraft.vibranium_boots": "Vibranium Boots",
   "item.flaettcraft.vibranium_hoe": "Vibranium Hoe",
   "block.flaettcraft.vibranium_ore": "Vibranium Ore",
   "block.flaettcraft.flaettblock": "Flaett Block",
+  "block.flaettcraft.valeblock": "Vale Block",
+  "block.flaettcraft.finnblock": "Finn Block",
+  "item.flaettcraft.star_wars_drill_music_disc": "Star Wars Drill Music Disc",
+  "item.flaettcraft.star_wars_drill_music_disc.desc": "Flätte (Florain Portmann) - Star Wars Drill",
   "creativetab.flaettcraft_tab": "FlaettCraft Tab"
 }

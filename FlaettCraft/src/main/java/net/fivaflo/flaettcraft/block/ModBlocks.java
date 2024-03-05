@@ -2,6 +2,7 @@ package net.fivaflo.flaettcraft.block;
 
 import net.fivaflo.flaettcraft.FlaettCraft;
 import net.fivaflo.flaettcraft.item.ModItems;
+import net.fivaflo.flaettcraft.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -27,7 +28,13 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
 
     public static final RegistryObject<Block> FlaettBlock = registerBlock("flaettblock",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).noLootTable()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(ModSounds.Sound_FlaettBlock_Sounds).noLootTable()));
+
+    public static final RegistryObject<Block> ValeBlock = registerBlock("valeblock",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(ModSounds.Sound_ValeBlock_Sounds).noLootTable()));
+
+    public static final RegistryObject<Block> FinnBlock = registerBlock("finnblock",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(ModSounds.Sound_FinnBlock_Sounds).noLootTable()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

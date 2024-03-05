@@ -26,8 +26,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        oreSmelting(pWriter, Vibranium_Smeltables, RecipeCategory.MISC, ModItems.Vibranium.get(), 1f, 300, "sapphire");
-        oreBlasting(pWriter, Vibranium_Smeltables, RecipeCategory.MISC, ModItems.Vibranium.get(), 1f, 150, "sapphire");
+        oreSmelting(pWriter, Vibranium_Smeltables, RecipeCategory.MISC, ModItems.Vibranium.get(), 1f, 300, "vibranium");
+        oreBlasting(pWriter, Vibranium_Smeltables, RecipeCategory.MISC, ModItems.Vibranium.get(), 1f, 150, "vibranium");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Vibranium_Sword.get())
                 .pattern(" V ")
@@ -74,11 +74,66 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.Vibranium.get()), has(ModItems.Vibranium.get()))
                 .save(pWriter);
 
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Vibranium.get(), 9)
-                .requires(ModBlocks.Vibranium_Ore.get())
-                .unlockedBy(getHasName(ModBlocks.Vibranium_Ore.get()), has(ModBlocks.Vibranium_Ore.get()))
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Vibranium_Helmet.get())
+                .pattern("VVV")
+                .pattern("V V")
+                .pattern("   ")
+                .define('V', ModItems.Vibranium.get())
+                .unlockedBy(getHasName(ModItems.Vibranium.get()), has(ModItems.Vibranium.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Vibranium_Chestplate.get())
+                .pattern("V V")
+                .pattern("VVV")
+                .pattern("VVV")
+                .define('V', ModItems.Vibranium.get())
+                .unlockedBy(getHasName(ModItems.Vibranium.get()), has(ModItems.Vibranium.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Vibranium_Leggings.get())
+                .pattern("VVV")
+                .pattern("V V")
+                .pattern("V V")
+                .define('V', ModItems.Vibranium.get())
+                .unlockedBy(getHasName(ModItems.Vibranium.get()), has(ModItems.Vibranium.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Vibranium_Boots.get())
+                .pattern("   ")
+                .pattern("V V")
+                .pattern("V V")
+                .define('V', ModItems.Vibranium.get())
+                .unlockedBy(getHasName(ModItems.Vibranium.get()), has(ModItems.Vibranium.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FlaettBlock.get())
+                .pattern("VVV")
+                .pattern("VVV")
+                .pattern("VVV")
+                .define('V', ModItems.Vibranium.get())
+                .unlockedBy(getHasName(ModItems.Vibranium.get()), has(ModItems.Vibranium.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ValeBlock.get())
+                .pattern("GBR")
+                .pattern(" F ")
+                .pattern("GBR")
+                .define('F', ModBlocks.FlaettBlock.get())
+                .define('G', Items.GREEN_DYE)
+                .define('B', Items.BONE_MEAL)
+                .define('R', Items.RED_DYE)
+                .unlockedBy(getHasName(ModBlocks.FlaettBlock.get()), has(ModBlocks.FlaettBlock.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FinnBlock.get())
+                .pattern("LLL")
+                .pattern("LFL")
+                .pattern("LLL")
+                .define('F', ModBlocks.FlaettBlock.get())
+                .define('L', Items.LIME_DYE)
+                .unlockedBy(getHasName(ModBlocks.FlaettBlock.get()), has(ModBlocks.FlaettBlock.get()))
+                .save(pWriter);
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

@@ -1,6 +1,8 @@
 package net.fivaflo.flaettcraft.item;
 
 import net.fivaflo.flaettcraft.FlaettCraft;
+import net.fivaflo.flaettcraft.item.custom.ModArmorItem;
+import net.fivaflo.flaettcraft.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,7 +27,16 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.Vibranium, 1, 1, new Item.Properties()));
     public static final RegistryObject<Item> Vibranium_Hoe = ITEMS.register("vibranium_hoe",
             () -> new HoeItem(ModToolTiers.Vibranium, 0, 0, new Item.Properties()));
-
+    public static final RegistryObject<Item> Vibranium_Helmet = ITEMS.register("vibranium_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.Vibranium, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> Vibranium_Chestplate = ITEMS.register("vibranium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.Vibranium, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> Vibranium_Leggings = ITEMS.register("vibranium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.Vibranium, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> Vibranium_Boots = ITEMS.register("vibranium_boots",
+                () -> new ArmorItem(ModArmorMaterials.Vibranium, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static  final RegistryObject<Item> Star_Wars_Drill_Music_Disc = ITEMS.register("star_wars_drill_music_disc",
+            () -> new RecordItem(6, ModSounds.Star_Wars_Drill, new Item.Properties().stacksTo(1), 3180));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

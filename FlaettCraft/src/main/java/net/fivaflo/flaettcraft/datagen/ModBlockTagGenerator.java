@@ -22,12 +22,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.Vibranium_Ore.get(),
-                        ModBlocks.FlaettBlock.get());
+                        ModBlocks.FlaettBlock.get(),
+                        ModBlocks.FinnBlock.get(),
+                        ModBlocks.ValeBlock.get());
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.Vibranium_Ore.get());
 
         this.tag(ModTags.Blocks.Needs_Vibranium_Tool)
-                .add(ModBlocks.FlaettBlock.get());
+                .add(ModBlocks.FlaettBlock.get(),
+                ModBlocks.ValeBlock.get(),
+                ModBlocks.FinnBlock.get());
     }
 }

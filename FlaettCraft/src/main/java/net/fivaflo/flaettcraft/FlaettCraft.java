@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.fivaflo.flaettcraft.block.ModBlocks;
 import net.fivaflo.flaettcraft.item.ModCreativeModTabs;
 import net.fivaflo.flaettcraft.item.ModItems;
+import net.fivaflo.flaettcraft.sound.ModSounds;
+import net.fivaflo.flaettcraft.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +33,8 @@ public class FlaettCraft
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        ModSounds.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

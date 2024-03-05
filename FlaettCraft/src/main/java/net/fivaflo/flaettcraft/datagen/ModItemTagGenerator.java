@@ -1,9 +1,12 @@
 package net.fivaflo.flaettcraft.datagen;
 
 import net.fivaflo.flaettcraft.FlaettCraft;
+import net.fivaflo.flaettcraft.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -18,6 +21,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.Vibranium_Helmet.get(), ModItems.Vibranium_Chestplate.get(), ModItems.Vibranium_Leggings.get(), ModItems.Vibranium_Boots.get());
 
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.Star_Wars_Drill_Music_Disc.get());
     }
 }

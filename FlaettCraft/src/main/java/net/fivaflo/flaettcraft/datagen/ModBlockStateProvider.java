@@ -17,6 +17,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.Vibranium_Ore);
         blockWithItem(ModBlocks.FlaettBlock);
+        blockWithItem(ModBlocks.ValeBlock);
+        blockWithItem(ModBlocks.FinnBlock);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

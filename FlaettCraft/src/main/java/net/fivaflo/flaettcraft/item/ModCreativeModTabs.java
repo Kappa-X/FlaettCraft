@@ -27,7 +27,14 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.Vibranium_Axe.get());
                         pOutput.accept(ModItems.Vibranium_Shovel.get());
                         pOutput.accept(ModItems.Vibranium_Hoe.get());
+                        pOutput.accept(ModItems.Vibranium_Helmet.get());
+                        pOutput.accept(ModItems.Vibranium_Chestplate.get());
+                        pOutput.accept(ModItems.Vibranium_Leggings.get());
+                        pOutput.accept(ModItems.Vibranium_Boots.get());
                         pOutput.accept(ModBlocks.FlaettBlock.get());
+                        pOutput.accept(ModBlocks.ValeBlock.get());
+                        pOutput.accept(ModBlocks.FinnBlock.get());
+                        pOutput.accept(ModItems.Star_Wars_Drill_Music_Disc.get());
                     })
                     .build());
 
