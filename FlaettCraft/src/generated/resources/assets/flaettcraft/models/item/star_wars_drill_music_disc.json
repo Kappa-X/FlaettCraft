@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "flaettcraft:item/star_wars_drill_music_disc"
+  }
+}
